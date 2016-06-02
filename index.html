@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>AGENDA DE CLIENTES</h1>
+	</div>
+	<div data-role="content">	
+    <img src="../agendaa/imagenes/directo.png" width="260" height="178">
+<ul data-role="listview">
+		<li><a href="#page2">Página de Registro</a></li>
+          
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>DATABASE</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+    <a data-role="button" data-rel="back" data-direction="reverse" data-icon="back" >BACK</a>
+		<h1>Página de Registro</h1>
+	</div>
+	<div data-role="content">	
+		 <form method="post" action="demoform.asp">
+      <p>Formulario de Registro</p>
+      
+    
+   <div class="ui-field-contain">
+      <label for="nombre">Nombre(s):</label>
+      <input type="text" name="nombre" id="nombre" data-clear-btn="true">
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" name="apellidos" id="apellidos" data-clear-btn="true">
+      <label for="fecha">F. Nacimiento </label>
+      <input type="date" name="fecha" id="fecha">
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email" placeholder="Tu email..">
+    </div>
+    
+    <div class="ui-field-contain">
+    <fieldset data-role="controlgroup">
+      <legend>Selecciona tu ocupación:</legend>
+      <label for="Estudiante">Estudiante</label>
+      <input type="radio" name="ocupacion" id="Estudiante" value="Estudiante">
+      <label for="Docente">Docente</label>
+      <input type="radio" name="ocupacion" id="Docente" value="Docente">
+      <label for="Empleado">Empleado</label>
+      <input type="radio" name="ocupacion" id="Empleado" value="Empleado">	
+      </fieldset>
+
+    </div>
+    
+       <div class="ui-field-contain">
+         <fieldset data-role="controlgroup">
+        <legend>¿Qué calificación merece nuestro servicio?:</legend>
+          <label for="diez">10 Excelente</label>
+          <input type="checkbox" name="calif" id="diez" value="10">
+          <label for="seis">6 Regular</label>
+          <input type="checkbox" name="calif" id="seis" value="6">
+          <label for="cero">0 Mala</label>
+          <input type="checkbox" name="calif" id="cero" value="0">	
+      </fieldset>
+
+
+    </div>
+      
+      <div class="ui-field-contain">
+               <fieldset class="ui-field-contain">
+        <label for="day">Seleccione su marca de tenis favorita</label>
+        <select name="day" id="day">
+          <option value="nike">Nike</option>
+          <option value="jordan">Air Jordan</option>
+          <option value="adidas">Adidas</option>
+          <option value="rebook">Rebook</option>
+          <option value="and1">And 1</option>
+          <option value="converse">Converse</option>
+          <option value="pirma">Pirma Brasil</option>
+        </select>
+      </fieldset>
+    </div>
+      
+   <div class="ui-field-contain">
+        <label for="info">Agrege un comentario a cerca de lo que agregaria a nuestro sitio:</label>
+        <textarea name="addinfo" id="info"></textarea>
+    </div>   
+      
+      <div data-role="fieldcontain">
+			<input type="submit" data-inline="true" name="submit" value="Enviar" />
+	  </div>
+     
+         
+    </form>
+    
+	</div>
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+</body>
+</html>
